@@ -1,0 +1,245 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+}
+
+img {
+    max-width: 375px;
+}
+
+.play {
+    border-radius: 100px;
+    border: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #FFF;
+    background-color: #ff5b28;
+    padding: 8px 24px;
+    margin-bottom: 8px;
+}
+
+.read {
+    border-radius: 100px;
+    border: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #000;
+    background-color: #ffb455;
+    padding: 8px 24px;
+    margin-bottom: 8px;
+}
+
+.author {
+    font-size: 14px;
+}
+
+.voice {
+    font-size: 14px;
+    padding-top: 2px;
+    border-top: 1px solid #eff0f1;
+}
+
+.fa-arrow-right {
+    font-size: 8px;
+}
+
+.container2 {
+    border: 1px solid #000;
+    width: 375px;
+    background-color: #F9F9F9;
+}
+
+.content {
+    padding: 16px;
+}
+
+.buttons {
+    margin: 16px 0px;
+}
+
+.about p {
+    font-size: 12px;
+}
+
+.text {
+    position: relative;
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 1s ease;
+
+    &.-expanded {
+        max-height: 100vh;
+    }
+}
+
+.text:not(.-expanded)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0), #F9F9F9);
+}
+
+.small-text p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.fa-play {
+    font-size: 10px;
+    padding-right: 8px;
+}
+
+.fa-book-open {
+    font-size: 10px;
+    padding-right: 8px;
+}
+
+/* Hamburgermeny överst till vänster */
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin: 8px 10px;
+    animation: menu 2s ease-in;
+}
+
+@keyframes menu {
+    0% {
+        transition-delay: 2s;
+        transform:
+    }
+
+    100% {}
+}
+
+/* Tiden överst på sidan. Statisk - ej kodad för tidräkning */
+.timeplayed {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Tiden överst på sidan. Statisk - ej kodad för tidräkning */
+.timeremain {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Slidern kopplad till tiden*/
+.slidecontainer {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 24px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #6b6b6b;
+    outline: none;
+    opacity: 0.5;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* Det animerade hjärtat som dyker upp och indikerar "sparat i bibliotek" */
+.heart-shape {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    top: -150px;
+    left: 50%;
+    animation: heart-shape 2s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heart-shape {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(45deg) scale(1);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(45deg) scale(1.5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    100% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) rotate(45deg) scale(0.3) translateX(-1500px) translateY(-600px);
+        display: none;
+    }
+}
+
+.heart-shape:before,
+.heart-shape:after {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    content: '';
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+.heart-shape:before {
+    bottom: 0px;
+    left: -50px;
+}
+
+.heart-shape:after {
+    top: -50px;
+    right: 0px;
+}
+
+/* Playbar som bild för att visualisera */
+.playbar {
+    position: relative;
+    width: 100%;
+}
+
+.container {
+    background: #000;
+    width: 375px;
+}

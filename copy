@@ -1,0 +1,17 @@
+<img scr="Images/Frame 1.png">
+
+Före
+Innan förbättringen såg gränsnittet ut som på bilden till vänster. När användaren går in på en bok hen vill lyssna
+på finns bara en knapp som äger "Spara i bokhyllan" vilket förvirrar användaren då hen är ute efter att lyssna på boken.
+
+Efter att användaren har klickat på "Spara i bokhyllan" visas två nya knappar "Lyssna på boken" och "Läs boken" (om den
+finns som E-bok).
+
+När användaren klickar på "Lyssna på boken" spelas boken upp och "playern" visas.
+
+Lösningen
+Eftersom att användaren "Spara i bokhyllan" är ett onödigt steg i flödet och förvirrande för användaren har vi tagit bort
+den knappen och valt att visa "Lyssna på boken"-knappen och "Läs boken"-knappen direkt när användaren går in på en bok.
+
+När användaren klickar på "Lyssna på boken" visas "playern" och en animation som visar användaren att boken har sparats
+i bokhyllan.
